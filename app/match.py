@@ -29,28 +29,37 @@ class Match:
         if(p == self.p1):
             if(len(self.ganadores) == 2):
                 scores = str(self.scoreP1[
-                             0]) + "-" + str(self.scoreP2[0]) + ", " + str(self.scoreP1[1]) + "-" + str(self.scoreP2[1])
+                             0]) + "-" + str(self.scoreP2[0]) + \
+                    ", " + str(self.scoreP1[1]) + "-" + str(self.scoreP2[1])
                 return scores
             if(len(self.ganadores) == 3):
-                scores = str(self.scoreP1[0]) + "-" + str(self.scoreP2[0]) + ", " + str(self.scoreP1[
-                    1]) + "-" + str(self.scoreP2[1]) + ", " + str(self.scoreP1[2]) + "-" + str(self.scoreP2[2])
+                scores = str(self.scoreP1[0]) + "-" + str(self.scoreP2[0]) + \
+                    ", " + str(self.scoreP1[1]) + "-" + str(self.scoreP2[1]) + \
+                    ", " + str(self.scoreP1[2]) + "-" + str(self.scoreP2[2])
                 return scores
             if(len(self.ganadores) == 5):
-                scores = str(self.scoreP1[0]) + "-" + str(self.scoreP2[0]) + ", " + str(self.scoreP1[1]) + "-" + str(self.scoreP2[1]) + ", " + str(self.scoreP1[
-                    2]) + "-" + str(self.scoreP2[2]) + ", " + str(self.scoreP1[3]) + "-" + str(self.scoreP2[3]) + ", " + str(self.scoreP1[4]) + "-" + str(self.scoreP2[4])
+                scores = str(self.scoreP1[0]) + "-" + str(self.scoreP2[0]) + \
+                    ", " + str(self.scoreP1[1]) + "-" + str(self.scoreP2[1]) + \
+                    ", " + str(self.scoreP1[2]) + "-" + str(self.scoreP2[2]) + \
+                    ", " + str(self.scoreP1[3]) + "-" + str(self.scoreP2[3]) + \
+                    ", " + str(self.scoreP1[4]) + "-" + str(self.scoreP2[4])
                 return scores
         elif(p == self.p2):
             if(len(self.ganadores) == 2):
-                scores = str(self.scoreP2[
-                             0]) + "-" + str(self.scoreP1[0]) + ", " + str(self.scoreP2[1]) + "-" + str(self.scoreP1[1])
+                scores = str(self.scoreP2[0]) + "-" + str(self.scoreP1[0]) + \
+                    ", " + str(self.scoreP2[1]) + "-" + str(self.scoreP1[1])
                 return scores
             if(len(self.ganadores) == 3):
-                scores = str(self.scoreP2[0]) + "-" + str(self.scoreP1[0]) + ", " + str(self.scoreP2[
-                    1]) + "-" + str(self.scoreP1[1]) + ", " + str(self.scoreP2[2]) + "-" + str(self.scoreP1[2])
+                scores = str(self.scoreP2[0]) + "-" + str(self.scoreP1[0]) + \
+                    ", " + str(self.scoreP2[1]) + "-" + str(self.scoreP1[1]) + \
+                    ", " + str(self.scoreP2[2]) + "-" + str(self.scoreP1[2])
                 return scores
             if(len(self.ganadores) == 5):
-                scores = str(self.scoreP2[0]) + "-" + str(self.scoreP1[0]) + ", " + str(self.scoreP2[1]) + "-" + str(self.scoreP1[1]) + ", " + str(self.scoreP2[
-                    2]) + "-" + str(self.scoreP1[2]) + ", " + str(self.scoreP2[3]) + "-" + str(self.scoreP1[3]) + ", " + str(self.scoreP2[4]) + "-" + str(self.scoreP1[4])
+                scores = str(self.scoreP2[0]) + "-" + str(self.scoreP1[0]) + \
+                    ", " + str(self.scoreP2[1]) + "-" + str(self.scoreP1[1]) + \
+                    ", " + str(self.scoreP2[2]) + "-" + str(self.scoreP1[2]) + \
+                    ", " + str(self.scoreP2[3]) + "-" + str(self.scoreP1[3]) + \
+                    ", " + str(self.scoreP2[4]) + "-" + str(self.scoreP1[4])
                 return scores
 
     def asignar(self, p, num_set, n1, n2):
